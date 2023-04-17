@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="Style.css">
+        <script src="Sitedata.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to UNCHARTED MADLIBS</h1>
+        <!-- main data - everything is in this -->
+        <div class="container-fluid">
+            <!-- heading -->
+            <!-- left side of the page -->
+            <div class="row">
+                <div class="col-sm-2">
+                    <a id="Story1" onclick="uncharted1()" style="cursor: pointer; cursor: hand;">Uncharted 1 : Fortune</a>
+                    <br>
+                    <a id="Story2" onclick="uncharted2()" style="cursor: pointer; cursor: hand;">Uncharted 2 : Among Thieves</a>
+                    <br>
+                    <a id="Story3" onclick="uncharted3()" style="cursor: pointer; cursor: hand;">Uncharted 3 : Deception</a>
+                    <br>
+                    <a id="Story4" onclick="uncharted4()" style="cursor: pointer; cursor: hand;">Uncharted 4 : A Thief's End</a>
+                    <br>
+                    <a id="Story5" onclick="uncharted5()" style="cursor: pointer; cursor: hand;">Uncharted The Lost Legacy</a>
+                </div>
+                <!-- uncharted 1 form -->
+                <div class="col-md-3" id="form1">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter Name:</label>
+                            <input id="U1MCH" type="text" placeholder="1st Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U1MCH2" type="text" placeholder="2nd Main Character(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U1MCH3" type="text" placeholder="3rd Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Location Name:</label>
+                            <input id="U1LOC" type="text" placeholder="Historic Location"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U1VCH" type="text" placeholder="1st Main Villan"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U1VCH2" type="text" placeholder="2nd Main Villan"/> 
+                        </div>
+                        <!-- div for button -->
+                        <div class="form-group">
+                            <input type="button" class="btn btn-default" value="Submit" id="Story1btn"/>
+                        </div>
+                    </form>
+                </div>
+                <!-- uncharted 2 form -->
+                <div class="col-md-3" id="form2">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter Name:</label>
+                            <input id="U2MCH" type="text" placeholder="1st Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U2MCH2" type="text" placeholder="2nd Main Character(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U2MCH3" type="text" placeholder="3rd Main Character(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U2SCH" type="text" placeholder="1st Side Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U2SCH2" type="text" placeholder="2nd Side Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U2SCH3" type="text" placeholder="3rd Side Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U2SCH4" type="text" placeholder="4th Side Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U2VCH" type="text" placeholder="1st Main Villan"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U2LOC" type="text" placeholder="1 location"/>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-default" value="Submit" id="Story2btn"/>
+                        </div>
+                    </form>
+                </div>
+                <!-- uncharted 3 -->
+                <div class="col-md-3" id="form3">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter Name:</label>
+                            <input id="U3MCH" type="text" placeholder="1st Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U3MCH2" type="text" placeholder="2nd Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U3SCH" type="text" placeholder="1st Side Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U3SCH2" type="text" placeholder="2nd Side Character(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U3SCH3" type="text" placeholder="3rd Side Character(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U3SCH4" type="text" placeholder="4th Side Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U3VCH" type="text" placeholder="Main Villan(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U3SVCH" type="text" placeholder="Side Villan"/>
+                            <br>
+                            <br>
+                            <label>Enter Number:</label>
+                            <input id="U3YRS" type="text" placeholder="In Years(2 digit number"/>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-default" value="Submit" id="Story3btn"/>
+                        </div>
+                    </form>
+                </div>
+                <!-- Uncharted 4 -->
+                <div class="col-md-3" id="form4">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter Name:</label>
+                            <input id="U4MCH" type="text" placeholder="1st Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U4MCH2" type="text" placeholder="2nd Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U4MCH3" type="text" placeholder="3rd Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U4MCH4" type="text" placeholder="4th Main Character(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U4VCH" type="text" placeholder="1st Main Villan"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U4VCH2" type="text" placeholder="2nd Main Villan"/>
+                            <br>
+                            <br>
+                            <label>Enter Number:</label>
+                            <input id="U4N1" type="text" placeholder="3 digit number"/>
+                            <br>
+                            <br>
+                            <label>Enter Number:</label>
+                            <input id="U4N2" type="text" placeholder="3 digit number"/>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-default" value="Submit" id="Story4btn"/>
+                        </div>
+                    </form>
+                </div>
+                <!-- Unchated lost legace -->
+                <div class="col-md-3" id="form5">
+                    <form>
+                        <div class="form-group">
+                            <label>Enter Name:</label>
+                            <input id="U5MCH" type="text" placeholder="1st Main Character(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U5MCH2" type="text" placeholder="2nd Main Character(female)"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U5MCH3" type="text" placeholder="3rd Main Character"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U5VCH" type="text" placeholder="Main Villan"/>
+                            <br>
+                            <br>
+                            <label>Enter Name:</label>
+                            <input id="U5SVCH" type="text" placeholder="Side Villan"/> 
+                        </div>
+                        <!-- div for button -->
+                        <div class="form-group">
+                            <input type="button" class="btn btn-default" value="Submit" id="Story5btn"/>
+                        </div>
+                    </form>
+                </div>
+                <!-- story output -->
+                <div class="col-md-7" id="story1">
+                    <h2>Uncharted 1 : Fortune</h2>
+                </div>
+                <div class="col-md-7" id="story2">
+                    <h3>Uncharted 2 : Among Thieves</h3>
+                </div>
+                <div class="col-md-7" id="story3">
+                    <h4>Uncharted 3 : Deception</h4>
+                </div>
+                <div class="col-md-7" id="story4">
+                    <h5>Uncharted 4 : A Thief's End</h5>
+                </div>
+                <div class="col-md-7" id="story5">
+                    <h6>Uncharted Lost Legacy</h6>
+                </div>
+            </div>
+        </div> 
+        <hr>
+        <footer>
+            ©2019 Queen Consolidated, Star City
+	</footer>
+    </body>
+</html>

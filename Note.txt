@@ -1,0 +1,12 @@
+Note:Just open the files in the browser and they will work fine.
+The assignment folder is also uploaded on Falcon in the WWW folder labeled Assignment 2.
+
+http://flacon.acadiau.ca/~145274b/WWW/Assignment2/index.html
+
+Not sure about this one either. Hope it works.
+Also, index.html is the main/default page.
+
+Note: please enter numbers where it askes for a number, other wise it will not work.
+Also, reload page after each run other wise the data can get cluttered on the screen.
+Every time a story is selected, an alert to fill all boxes is given. The same alert
+is given if boxes are left empty.
